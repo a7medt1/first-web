@@ -1,0 +1,58 @@
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    top: 101px; /* تحديد المسافة من أعلى الصفحة */
+    background-color: #d3d276; /* لون خلفية الزر */
+    color: rgb(255, 255, 255); /* لون النص على الزر */
+    width: 100%; 
+    height: 80px;
+}
+
+.ttp{
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+            padding: 14px 20;
+            list-style: none;
+
+
+}
+.ttp a{
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.ttp a:hover{ 
+        background-color: #000000;
+    color: rgb(207, 141, 141);}
+
+
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+        float: left;
+                padding: 14px 20;
+                list-style: none;
+    
+    
+    }
+    .nav a{
+     
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .nav a:hover{ 
+            background-color: #000000;
+        color: rgb(207, 141, 141);}

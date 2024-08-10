@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المنتجات</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="logo.png" alt="شعار الموقع" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link text-white">الرئيسية</a></li>
+                            <li class="nav-item"><a href="products.html" class="nav-link text-white">المنتجات</a></li>
+                            <li class="nav-item"><a href="offers.html" class="nav-link text-white">العروض</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link text-white">اتصل بنا</a></li>
+                            <li class="nav-item"><a href="admin.html" class="nav-link text-white">إدارة المنتجات</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="user-info">
+                        <span id="user-name"></span>
+                        <a href="#" id="logout-link" class="text-white" style="display: none;">تسجيل الخروج</a>
+                        <a href="login.html" id="login-link" class="text-white">تسجيل الدخول</a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html" id="cart-link" class="text-white">سلة التسوق (<span id="cart-count">0</span>)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container my-4">
+        <h2>إدارة المنتجات</h2>
+        <div class="add-product">
+            <h3>إضافة منتج جديد</h3>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="product-name">اسم المنتج</label>
+                    <input type="text" class="form-control" id="product-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">سعر المنتج</label>
+                    <input type="number" class="form-control" id="product-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">صورة المنتج</label>
+                    <input type="text" class="form-control" id="product-image" required>
+                </div>
+                <button type="submit" class="btn btn-primary">إضافة المنتج</button>
+            </form>
+        </div>
+        <div class="products-list mt-5">
+            <h3>المنتجات</h3>
+            <div class="row" id="products-container"></div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>حقوق الطبع والنشر &copy; 2024 متجر إلكتروني</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

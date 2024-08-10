@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض المنتجات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #d3d276;
+            color: black;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #d3d276; /* لون الخلفية */
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 20px;
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>متجر المنتجات</h1>
+        <nav class="navbar">
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="offers.html">العروض</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <main class="product-container">
+        <div class="product-card">
+            <img src="product1.jpg" alt="منتج 1" class="product-image">
+            <h2 class="product-title">منتج 1</h2>
+            <p class="product-price">$49.99</p>
+            <button class="add-to-cart">إضافة إلى السلة</button>
+        </div>
+
+        <div class="product-card">
+            <img src="product2.jpg" alt="منتج 2" class="product-image">
+            <h2 class="product-title">منتج 2</h2>
+            <p class="product-price">$39.99</p>
+            <button class="add-to-cart">إضافة إلى السلة</button>
+        </div>
+
+        <div class="product-card">
+            <img src="product3.jpg" alt="منتج 3" class="product-image">
+            <h2 class="product-title">منتج 3</h2>
+            <p class="product-price">$59.99</p>
+            <button class="add-to-cart">إضافة إلى السلة</button>
+        </div>
+
+        <!-- أضف المزيد من المنتجات هنا -->
+    </main>
+
+    <footer class="footer">
+        <p>حقوق الطبع والنشر © 2024 متجر المنتجات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
